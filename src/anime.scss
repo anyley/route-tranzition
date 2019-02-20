@@ -1,0 +1,47 @@
+@keyframes anim-enter {
+  from {
+    opacity: 1;
+    transform: translate(100%, 0%) scale(0.8);
+  }
+  33% {
+    opacity: 1;
+    transform: translate(100%, 0%) scale(0.8);
+  }
+  66% {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1);
+  }
+}
+
+@keyframes anim-leave {
+  from {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1);
+  }
+  33% {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(0.8);
+  }
+  66% {
+    opacity: 1;
+    transform: translate(-100%, 0%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-100%, 0%) scale(0.8);
+  }
+}
+
+.enter {
+  opacity: 1;
+  animation: anim-enter 0.75s;
+}
+
+.leave {
+  opacity: 1;
+  animation: anim-leave 0.75s;
+}
